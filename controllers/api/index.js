@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const sequelize = require('../../config/config');
 
 const userRoutes = require('./user-routes.js');
 const postRoutes = require('./post-routes');

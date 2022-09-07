@@ -33,7 +33,7 @@ router.get('/', (req, res) => {
 		.then((postData) => {
 			const posts = postData.map(post => post.get({ plain: true }));
 
-			res.render('homepage', {
+			res.render('layouts/main', {
 				posts,
 				loggedIn: req.session.loggedIn
 			});
@@ -94,7 +94,7 @@ router.get('/post/:id', (req, res) => {
 // login user route
 router.get('/login', (req, res) => {
 	if (req.session.loggedIn) {
-		res.redirect('/');
+		res.redirect('');
 		return;
 	}
 

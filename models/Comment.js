@@ -9,7 +9,7 @@ Comment.init(
   {
     id: {
       type: DataTypes.INTEGER,
-      allowNull: Falsefalse,
+      allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
