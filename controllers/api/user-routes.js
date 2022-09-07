@@ -72,7 +72,7 @@ router.post("/logout", (req, res) => {
 router.delete("/user/:id", (req, res) => {
 	User.destroy({
 		where: {
-			//code here
+			id: req.params.id
 		},
 	})
 		.then((data) => {

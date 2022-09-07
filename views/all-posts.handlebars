@@ -3,10 +3,10 @@
   <article class="card">
     <div class="card-header flex-row justify-space-between">
       <h2>
-        <a href="/post/{{!-- handlebar code here --}}">{{!-- handlebar code here --}}</a>
+        <a href="/post/{{post.post_url}}">{{post.title}}</a>
       </h2>
       <div>
-        Posted by {{!-- handlebar code here --}} on {{!-- handlebar code here --}}
+        Posted by {{post.user.username}} on {{post.created_at}}
       </div>
     </div>
     <div class="card-body">

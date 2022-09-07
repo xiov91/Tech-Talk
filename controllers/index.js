@@ -1,7 +1,7 @@
 const router = require('express').Router();
-// requireing a folder which looks for the index.js inside
+// requiring a folder which looks for the index.js inside
 const apiRoutes = require('./api/');
-// requireing a name with a extention points to a file
+// requiring a name with a extension points to a file
 const homeRoutes = require('./home-routes.js');
 const dashboardRoutes = require('./dashboard-routes.js');
 
