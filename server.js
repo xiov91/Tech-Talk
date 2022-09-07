@@ -8,13 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sequelize = require("./config/config");
-//IFEE to create the session store
+
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
-// this whole section is to set up session middleware
-// secret is a "secret" to sign into the cookie session
-// resave set to false makes sure the cookie session doesn't get reset on every request
-// saveUninitialized true makes sure that the session will save even if it's unmodified
 const sess = {
 	secret: "Super secret secret",
 	cookie: {},
