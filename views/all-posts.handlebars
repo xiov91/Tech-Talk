@@ -1,16 +1,16 @@
-<div class="posts">
+<div class='posts'>
   {{#each posts}}
-  <article class="card">
-    <div class="card-header flex-row justify-space-between">
+  <article class='card'>
+    <div class='card-header flex-row justify-space-between'>
       <h2>
-        <a href="/post/{{post.post_url}}">{{post.title}}</a>
+        <a href='/post/{{post.post_url}}'>{{post.title}}</a>
       </h2>
       <div>
-        Posted by {{post.user.username}} on {{post.created_at}}
+        Posted by {{post.user.username}}
       </div>
     </div>
-    <div class="card-body">
-      {{!-- handlebar code here --}}
+    <div class='card-body'>
+      {{> post-info post}}
     </div>
   </article>
   {{/each}}

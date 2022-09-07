@@ -2,7 +2,7 @@
 // remember controller code changes must be made to use this code as middleware
 const withAuth = (req, res, next) => {
   if (!req.session.userId) {
-    res.redirect("/login");
+    res.redirect('/login');
   } else {
     // middleware best practice and requirement to call next(), express understands this call
     next();

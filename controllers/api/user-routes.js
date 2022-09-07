@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Post, Comment } = require('../../models');
+const { User } = require('../../models');
 
 // post a new user
 // http://localhost:3000/api/users
